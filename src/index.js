@@ -1,4 +1,4 @@
-export const images = [
+const _images = [
     require('./image/head1.png'),
     require('./image/head2.png'),
     require('./image/head3.png'),
@@ -10,7 +10,12 @@ export const images = [
     require('./image/head9.png'),
 ];
 
-export function get(empCode) {
+export default {
+    images: _images,
+    get: _get,
+}
+
+function _get(empCode) {
     if (empCode && empCode.length > 0) {
         let tempCode = '';
         if (empCode.length > 4) {
@@ -23,8 +28,8 @@ export function get(empCode) {
             const code = tempCode.charCodeAt(i);
             hash = Math.abs(13 * hash + code);
         }
-        return images[hash % 9];
+        return _images[hash % 9];
     } else {
-        return images[0];
+        return _images[0];
     }
 }
