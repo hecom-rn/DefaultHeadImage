@@ -13,7 +13,7 @@ const _images = [
 export default {
     images: _images,
     get: _get,
-}
+};
 
 function _get(empCode) {
     if (empCode && empCode.length > 0) {
