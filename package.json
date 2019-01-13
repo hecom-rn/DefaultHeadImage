@@ -1,0 +1,15 @@
+{
+  "name": "@hecom/image-default-head",
+  "version": "0.0.1",
+  "description": "Default Head Image Utility",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:hecom/image-default-head.git"
+  },
+  "author": "Xiaosong Gao",
+  "license": "MIT",
+  "peerDependencies": {
+  }
+}
