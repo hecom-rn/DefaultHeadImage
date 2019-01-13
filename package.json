@@ -1,6 +1,6 @@
 {
   "name": "@hecom/image-default-head",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Default Head Image Utility",
   "main": "dist/index.js",
   "scripts": {},
