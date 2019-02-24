@@ -1,4 +1,6 @@
-const _images = [
+import { ImageRequireSource } from 'react-native';
+
+const _images: ImageRequireSource[] = [
     require('./image/head1.png'),
     require('./image/head2.png'),
     require('./image/head3.png'),
@@ -15,7 +17,7 @@ export default {
     get: _get,
 };
 
-function _get(empCode) {
+function _get(empCode?: string): ImageRequireSource {
     if (empCode && empCode.length > 0) {
         let tempCode = '';
         if (empCode.length > 4) {

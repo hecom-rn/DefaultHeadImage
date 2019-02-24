@@ -1,15 +1,24 @@
 {
   "name": "@hecom/image-default-head",
   "version": "1.0.1",
+  "private": false,
   "description": "Default Head Image Utility",
-  "main": "dist/index.js",
-  "scripts": {},
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "./node_modules/.bin/eslint . --ext .ts,.tsx"
+  },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:hecom/image-default-head.git"
+    "url": "https://github.com/hecom-rn/DefaultHeadImage.git"
   },
   "author": "Xiaosong Gao",
   "license": "MIT",
-  "peerDependencies": {
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.5",
+    "@types/react-native": "^0.57.38",
+    "eslint-config-automatic": "latest"
   }
 }
