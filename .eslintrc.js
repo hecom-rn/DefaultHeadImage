@@ -1,6 +1,8 @@
-const config = require('eslint-config-automatic/module/typescript');
-config.env = {
-    ...config.env,
-    commonjs: true,
+module.exports = {
+    plugins: [
+        "automatic",
+    ],
+    extends: [
+        "plugin:automatic/typescript-react-native",
+    ],
 };
-module.exports = config;
